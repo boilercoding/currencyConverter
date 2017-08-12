@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         Double dollarAmountDouble = Double.parseDouble(dollarAmountEditText.getText().toString());
         Double rdPesoAmount = dollarAmountDouble * 47.27;
 
-        Toast.makeText(MainActivity.this, "RD$" + rdPesoAmount.toString(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this, "RD$" + String.format("%.2f", rdPesoAmount), Toast.LENGTH_SHORT).show();
     }
 
     @Override
